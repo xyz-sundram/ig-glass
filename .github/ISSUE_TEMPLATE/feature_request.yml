@@ -1,0 +1,11 @@
+name: Feature request
+description: Glass somewhere else, or a new Instagram version
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Which part of Instagram, and how it should look. A screenshot or iOS reference helps.
+    validations:
+      required: true

@@ -1,0 +1,43 @@
+name: Bug report
+description: Glass is missing, looks broken, or Instagram crashes
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: Which screen, what you see. Screenshots help a lot.
+    validations:
+      required: true
+
+  - type: input
+    id: phone
+    attributes:
+      label: Phone and Android version
+      placeholder: Pixel 9, Android 16
+    validations:
+      required: true
+
+  - type: input
+    id: instagram
+    attributes:
+      label: Instagram version
+      description: Settings → Apps → Instagram. Only 454.0.0.54.77 (386014705) is targeted.
+      placeholder: 454.0.0.54.77 (386014705)
+    validations:
+      required: true
+
+  - type: input
+    id: framework
+    attributes:
+      label: Framework and root
+      placeholder: LSPosed 1.10, KernelSU
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: |
+        `adb shell su -c 'grep -h IgGlass /data/adb/lspd/log/modules_*.log | tail -50'`
+        or the module log from the LSPosed app.
+      render: text

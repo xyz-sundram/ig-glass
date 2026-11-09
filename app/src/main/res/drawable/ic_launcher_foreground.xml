@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- glass lens -->
+    <path android:pathData="M54,54m-28,0a28,28 0,1 1,56 0a28,28 0,1 1,-56 0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34" android:startY="28"
+                android:endX="74" android:endY="82">
+                <item android:offset="0" android:color="#66FFFFFF" />
+                <item android:offset="1" android:color="#1AFFFFFF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- rim highlight -->
+    <path
+        android:pathData="M54,54m-27.25,0a27.25,27.25 0,1 1,54.5 0a27.25,27.25 0,1 1,-54.5 0"
+        android:strokeWidth="1.5">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="30" android:startY="28"
+                android:endX="78" android:endY="80">
+                <item android:offset="0" android:color="#F2FFFFFF" />
+                <item android:offset="0.5" android:color="#26FFFFFF" />
+                <item android:offset="1" android:color="#B3FFFFFF" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <!-- camera -->
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="2.5"
+        android:pathData="M43,39H65A5,5 0,0 1,70 44V64A5,5 0,0 1,65 69H43A5,5 0,0 1,38 64V44A5,5 0,0 1,43 39ZM54,47A7,7 0,1 0,54 61A7,7 0,1 0,54 47" />
+    <path android:fillColor="#FFFFFFFF" android:pathData="M63,43.5A1.5,1.5 0,1 0,63 46.5A1.5,1.5 0,1 0,63 43.5" />
+</vector>
